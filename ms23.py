@@ -36,7 +36,7 @@ if response.status_code == 200:
     nav_list = soup.find('ul', class_='nav nav-list')
     
     # Print the nav-list content
-    print(nav_list.prettify())
+    print(nav_list.get_text())
 else:
     print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
 

@@ -17,9 +17,9 @@ response.raise_for_status()
 # Parse the HTML content
 soup = BeautifulSoup(response.content, 'html.parser')
 
-# Find the navigation list
+# Finding navigation list
 nav_list = soup.find('ul', class_="nav nav-list")
-categories = nav_list.find_all('a')[1:]  # Skip the first 'Books' category
+categories = nav_list.find_all('a')[1:] 
 
 def extract_book_details(book_url):
     response = requests.get(book_url)

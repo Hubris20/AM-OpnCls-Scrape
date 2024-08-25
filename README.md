@@ -1,6 +1,6 @@
 This notebook includes data scraping of books.toscrape.com
 
-It extracts the information by using the steps below
+It extracts the information by using the steps below:
 
 Using beautiful soup, it parses the html content
 Inspecting the html, it creates a dynamic url to retrieve the requested data
